@@ -1,0 +1,18 @@
+server:
+    port: 8585
+ 
+spring:
+    datasource:
+        driver-class-name: com.oracle.jdbc.Driver
+        url: jdbc:oracle:thin:@localhost:1521:XE
+        username: AIRLINE
+        password: AIRLINE
+        test-while-idle: true
+        validation-query: SELECT 1
+        max-wait: 10000
+        max-active: 300
+        test-on-borrow: true
+        
+    jpa:
+        database-platform: org.hibernate.dialect.oracle
+        show-sql: true

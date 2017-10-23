@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.mycompany_BaseDatos.Backend_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.backend.basedatos.Customer</class>
+    <class>com.backend.basedatos.Produto</class>
+    <class>com.backend.basedatos.Parentesco</class>
+    <class>com.backend.basedatos.Detfactura</class>
+    <class>com.backend.basedatos.Cliente</class>
+    <class>com.backend.basedatos.FltInstance</class>
+    <class>com.backend.basedatos.Claseproducto</class>
+    <class>com.backend.basedatos.FltSchedule</class>
+    <class>com.backend.basedatos.Factura</class>
+    <class>com.backend.basedatos.Airport</class>
+    <class>com.backend.basedatos.Persona</class>
+    <class>com.backend.basedatos.Estado</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+      <property name="javax.persistence.jdbc.user" value="AIRLINE"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="AIRLINE"/>
+    </properties>
+  </persistence-unit>
+</persistence>
